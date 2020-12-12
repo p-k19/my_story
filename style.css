@@ -1,0 +1,35 @@
+
+
+.first {
+  background-image: url(mog.jpeg);
+ border-radius: 50%;
+  width: 140px; 
+  height: 130px;
+   text-align:;
+   margin: 0px auto;
+
+  /* margin-left: 625px;*/
+}
+
+
+.second {
+	border-radius: 25px;
+  background-color: yellow;
+  width: 450px;
+  border: 15px white;
+  padding: 50px;
+  padding-bottom: auto;
+  margin: 0px auto;
+/* margin-left: 450px;*/
+  margin-top: 10px;"
+
+}
+img
+{
+	border-radius: 50%;
+	width=140px ;
+	height= 120px;
+	margin-bottom: 20px; 
+	background-image: url('mog.jpeg');
+
+}
