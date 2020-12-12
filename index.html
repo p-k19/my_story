@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index </title>
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+
+<body style="background-color: yellow; font-size: 15px;  text-align: center;border-radius: 25px;">
+
+<img src="mog.jpeg" style="border-radius: 50%; width: 140px; height: 130px; text-align: center; margin-bottom: 20px;">
+
+<form method="GET" action="story.html" id="form" style="border-radius: 25px;">
+<fieldset style="background-color:  rgb(68, 22, 175);  margin-top: 20px;width: 480px; margin:  0px auto;">
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Index</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="bg-color" >
+
+<h1  style="background-color: rgb(68, 22, 175);border-radius: 25px;">Complete the Form -</h1>
+
+
+<div class="form" style="background-color: rgb(68, 22, 175);">
+<form action="story.html" method="get">
+
+<label for="animal1"> Animal : </label>
+<input type="text" id="animal1" value="" name="animalname" placeholder="Enter the animal name :" required><br><br>
+
+<label for="animal2">Another Animal : </label>
+<input type="text" id="animal2" value="" placeholder="Enter the another animal name : " required><br><br>
+
+<label for="animal3">One More Animal : </label>
+<input type="text" id="animal3" value="" placeholder="Enter the one more animal name: " required><br><br>
+
+<label for="adjective">Adjective (past tense) : </label>
+<input type="text" id="adjective" value="adjective" placeholder="Enter the Tense : " required><br><br>
+
+<label for="verb">Verbs (ends in-ing) : </label>
+<input type="text" id="verb" value="" name="verb" placeholder="Enter the Verbs Likes - Running" required><br><br>
+
+<label for="number">Number : </label>
+<input type="number" id="number" value="" name="" placeholder="Enter the Number : " required><br><br>
+
+<label for="yes-no">Yes or No : </label>
+<input type="radio" value="Yes" id="yes" name="option">Yes
+<input type="radio" value="No" id="yesNo" name="option">No <br><br>
+
+<label for="speed">Relative Speed (ends in -er) : </label>
+<select name="speed" id="speed">
+<option value="Quicker">Quicker</option>
+<option value="Slow">Slow</option>
+<option value="Faster">Faster</option>
+</select><br><br>
+
+<label for="quotes">Motivational Quotes : </label>
+<input type="text" id="quotes" value="" name="" placeholder="Example" required><br><br>
+
+<label for="message">Meaningful Message : </label><br><br>
+<textarea name="" id="message" cols="35" rows="5" placeholder="This is a Meanings"></textarea><br><br>
+
+<button type="submit" id="send" onclick="dataTransfer();">Form My Story !</button>
+</form>
+</div>
+
+</div>
+</div>
+
+<script >    
+
+function dataTransfer(){
+var firstAnimal = document.getElementById('animal1').value;
+localStorage.setItem('firstAnimal',firstAnimal)
+
+var secondAnimal = document.getElementById('animal2').value;
+localStorage.setItem('secondAnimal',secondAnimal)
+
+
+var yes = document.getElementById('yes').value;
+localStorage.setItem('yes',yes)
+
+var speed = document.getElementById('speed').value;
+localStorage.setItem('speed',speed)
+
+var adjective = document.getElementById('adjective').value;
+localStorage.setItem('adjective',adjective)
+
+var thirdAnimal = document.getElementById('animal3').value;
+localStorage.setItem('thirdAnimal',thirdAnimal)
+
+var quotes = document.getElementById('quotes').value;
+localStorage.setItem('quotes',quotes)
+
+var verbs = document.getElementById('verb').value;
+localStorage.setItem('verbs',verbs)
+
+var number = document.getElementById('number').value;
+localStorage.setItem('number',number)
+
+var message = document.getElementById('message').value;
+localStorage.setItem('message',message)
+
+return false;
+}
+
+
+</script>
+</body>
+</html>
+
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
